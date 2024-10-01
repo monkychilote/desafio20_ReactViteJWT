@@ -1,0 +1,47 @@
+/* Asegurar que html y body ocupen toda la altura del viewport */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Asegurar que el contenedor del carrito ocupe toda la altura disponible */
+.cart-container {
+  min-height: 100vh; /* Ocupar al menos el 100% de la altura del viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px; /* Elimina el margen superior de Bootstrap */
+  padding-bottom: 40px; /* Elimina el margen superior de Bootstrap */
+}
+
+/* Ajustes para la tarjeta principal del carrito */
+.cart-card {
+  width: 40rem;
+  max-height: 80%; /* Ajusta la tarjeta a un máximo del 80% del viewport */
+  overflow-y: auto; /* Permitir scroll si el contenido es mayor al tamaño disponible */
+}
+
+/* Estilo para las tarjetas de los elementos del carrito */
+.cart-item-card {
+  width: 540px;
+  margin-bottom: 1rem;
+}
+
+/* Ajuste para los controles dentro de cada tarjeta de pizza */
+.cart-item-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-total {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.cart-buttons {
+  padding-top: 1rem;
+  text-align: center;
+}
